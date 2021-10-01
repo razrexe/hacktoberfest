@@ -1,6 +1,14 @@
 # Bisection-Bolzano-Method-Numerical-Computing-
 This python program is created for solving Bisection or Bolzano Method for finding the root of the linear system of equations. 
 
+<hr>
+
+## Software requirmnets
+- python3x
+- jupyter notebook 
+
+<hr>
+## Instructions
 
 Input: A function of x, for example x3 - x2 + 2.     
        And two values: a = -200 and b = 300 such that
@@ -10,4 +18,5 @@ Output: The value of root is : -1.0025
         OR any other value with allowed
         deviation from root.
 
+<hr>
 Author: [Syed Mustafa Imam](https://github.com/SyedMustafaImam/)
