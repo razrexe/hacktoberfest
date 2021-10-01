@@ -6,6 +6,8 @@ This python program is created for solving Bisection or Bolzano Method for findi
 ## Software requirmnets
 - python3x
 - jupyter notebook 
+- numpy
+- pandas
 
 <hr>
 ## Instructions
