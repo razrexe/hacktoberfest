@@ -1,3 +1,4 @@
+<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" width="700" height="300" style="width: 700px; height: 300px;">
 
 # Hacktoberfest 2021
 Contribute anything for your T-shirt, must be relevant that can add some value to this repo.
