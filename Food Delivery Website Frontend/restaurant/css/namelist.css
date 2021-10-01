@@ -1,44 +1,48 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+html, body {
 	height: 100%;
 }
 
 body {
 	margin: 0;
 	background: linear-gradient(45deg, #49a09d, #5f2c82);
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 }
+
 button {
-    background-color: orange;
-  border: none;
-  color: black;
-  padding: 15px 82px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+	background-color: orange;
+	border: none;
+	color: black;
+	padding: 15px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 250px;
 }
+
 .container {
-	position: relative;
-	top: 50%;
-	left: 15%;
-	
+	margin-bottom: 5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 table {
-	width: 800px;
+	width: 80%;
+	max-width: 800px;
 	border-collapse: collapse;
 	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-th,
-td {
+th, td {
 	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 	color: #fff;
 }
 
@@ -46,31 +50,42 @@ th {
 	text-align: left;
 }
 
-thead {
-	th {
-		background-color: #55608f;
-	}
+thead th {
+	background-color: #55608f;
 }
 
-tbody {
-	tr {
-		&:hover {
-			background-color: rgba(255,255,255,0.3);
-		}
-	}
-	td {
-		position: relative;
-		&:hover {
-			&:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -9999px;
-				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2);
-				z-index: -1;
-			}
-		}
-	}
+tbody tr:hover {
+	transition: ease-in-out 0.2s;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+	position: relative;
+}
+
+tbody td:hover::before {
+	transition: ease-in-out 0.2s;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -900px;
+	bottom: -900px;
+	background-color: rgba(255, 255, 255, 0.2);
+	z-index: -1;
+}
+
+.list-buttons {
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.list-buttons a {
+	margin: 0 1em;
+}
+.list-buttons a button:hover{
+	transition: ease-in-out 0.2s;
+	background-color: rgb(255, 123, 0);
 }
