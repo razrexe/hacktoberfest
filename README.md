@@ -10,7 +10,7 @@ Contribute anything for your T-shirt, must be relevant that can add some value t
 ## steps to push :
 - commit with a good message
 - push to your branch or MAIN branch
-- Create PUll request
+- Create Pull request
 
 
 ### Getting started with git 🚀
