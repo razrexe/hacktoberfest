@@ -194,6 +194,66 @@ a.navbar-item.is-active:hover {
     outline: 0.25rem solid white
 }
 
+.vmBtn {
+    padding: 0.5rem 1rem;
+    float: right;
+    margin-top: 3.5rem;
+}
+
+#blog-card a {
+    color:#898989;
+    text-decoration: none;
+}
+
+.blogDetailed {
+    height: auto;
+    padding: 1rem 5rem;
+}
+
+.headerBanner {
+    background-image: url('../Pictures/topBanner.jpg');
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.blog-content-box {
+    margin-top: 3rem;
+}
+
+.blog-quote {
+    color: white;
+
+    background: #4081b8;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-banner {
+    padding: 0;
+}
+
+.last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
 
 
 @media (max-width: 768px) {

@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+  <head>
+    <meta charset="utf-8">
+    <title>Blogs</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach(function($el) {
+            $el.addEventListener('click', function() {
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+
+
 <head>
   <meta charset="utf-8">
   <title>Blogs</title>
@@ -34,6 +63,21 @@
   </nav>
 
 
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 1</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen ...
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                         <button type="button" class="btn btn-secondary vmBtn">
+                            <a href="./detailed.html?id=1">
+                              View more
+                            </a>
+                          </button>
+                    </div>
+                </div>
+        </div>
+
   <section class="hero is-fullheight" id="blog">
     <div class="hero-body">
       <div class="container">
@@ -43,6 +87,7 @@
           <div class="level-left">
             <p class="subtitle is-uppercase has-text-weight-medium has-text-black">Lets's Read</p>
           </div>
+
 
           <div class="level-right">
             <div class="level-item">
@@ -60,6 +105,20 @@
             </div>
           </div>
         </nav>
+
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 2</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen ...
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                         <button type="button" class="btn btn-secondary vmBtn">
+                           <a href="./detailed.html?id=2">
+                            View more
+                          </a>
+                        </button>
+                    </div>
+                </div>
 
       </div>
     </div>
@@ -86,6 +145,19 @@
       </div>
 
     </div>
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 3</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen ...
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                         <button type="button" class="btn btn-secondary vmBtn">
+                            <a href="./detailed.html?id=3">
+                              View more
+                            </a>
+                         </button>
+                    </div>
+                </div>
 
     <div class="columns has-text-centered blog-card">
       <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
