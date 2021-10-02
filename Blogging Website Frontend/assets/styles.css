@@ -95,6 +95,9 @@ a.navbar-item.is-active:hover {
     content: "";
 }
 
+.hero {
+    display: block;
+}
 .title {
     text-align: left;
     margin: auto 0.75rem !important
@@ -126,7 +129,7 @@ a.navbar-item.is-active:hover {
     background-color: grey;
 }
 
-#blog #blog-card {
+#blog .blog-card {
     transition: all 0.25s ease;
     margin-bottom: 0.5vmax;
     transform: scale(0.85);
@@ -139,7 +142,7 @@ a.navbar-item.is-active:hover {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)
 }
 
-#blog #blog-card:hover {
+#blog .blog-card:hover {
     transform: scale(0.875);
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
@@ -147,19 +150,19 @@ a.navbar-item.is-active:hover {
 }
 
 
-#blog #blog-card .title {
+#blog .blog-card .title {
     margin: 0.5rem !important
 }
 
-#blog #blog-card .content {
+#blog .blog-card .content {
     margin: 0.5rem
 }
 
-#blog #blog-card .column {
+#blog .blog-card .column {
     display: grid
 }
 
-#blog #blog-card .column .image {
+#blog .blog-card .column .image {
     border-radius: 0.25rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -254,18 +257,18 @@ a.navbar-item.is-active:hover {
 
 
 @media (max-width: 768px) {
-    #blog #blog-card {
+    #blog .blog-card {
         transform: scale(1);
         margin-bottom: 5vmax !important
     }
-    #blog #blog-card:hover {
+    #blog .blog-card:hover {
         transform: scale(1.025);
         margin-bottom: 5vmax !important;
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
         -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25)
     }
-    #blog #blog-card .image {
+    #blog .blog-card .image {
         padding-top: 50% !important
     }
 }
