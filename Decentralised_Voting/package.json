@@ -1,0 +1,22 @@
+{
+  "name": "dcent_voting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy":"npm run build",
+    "deploy -gh pages -d build"
+  },
+  "homepage":"http://Arch0125.github.io/dcent_voting",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "lite-server": "^2.3.0"
+  }
+}
