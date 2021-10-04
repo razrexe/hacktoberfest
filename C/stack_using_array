@@ -54,7 +54,7 @@ void print()
 	printf("\nData present in the stack : ");
     for(i=0;i<=top;i++)
     	printf("%d ",stack[i]);
-    printf("\n\n");
+    printf("\n");
 }
 
 int main()
@@ -74,7 +74,10 @@ int main()
 	   		break;
     		case 4: exit(0);
 	    	break;
+		default:
+		print("Wrong Input");
 		}
    }while (choice!=4);
    return 0;
+   getch();
 }

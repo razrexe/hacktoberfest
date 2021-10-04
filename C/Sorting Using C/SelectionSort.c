@@ -29,4 +29,5 @@ int main()
         printf("%d\t",arr[i]);
     }
     return 0;
+    getch();
 }
