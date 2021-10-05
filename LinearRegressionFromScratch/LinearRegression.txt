@@ -1,0 +1,1 @@
+Implementing linear regression by creating a linear regression model from scratch without using any other external package.
