@@ -1,0 +1,23 @@
+class Solution:
+    def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
+        if not root: return root
+        if root.left is None and root.right is None: return [[root.val]]
+
+        dq = deque([])
+        dq.append(root)
+        node_num = len(dq)
+        res = []
+        while dq:
+            l = []
+            for i in range(node_num):
+                node = dq.popleft()
+                if node is not None:
+                    l.append(node.val)
+                    if node.left is not None:
+                        dq.append(node.left)
+
+                    if node.right is not None:
+                        dq.append(node.right)
+
+            node_num = len(dq)
+            res.append(l)
