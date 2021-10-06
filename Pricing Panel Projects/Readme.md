@@ -1,5 +1,7 @@
 # Pricing-Panel
 
+A responsive website made using HTML and CSS.
+
 Website link : http://pricing-panel-eta.vercel.app/
 
 Here is how it looks 
