@@ -1,0 +1,86 @@
+/* 1. Main Layout */
+
+body {
+  background-color: silver;
+}
+main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "ac ac"
+    "remote-wrap remote-wrap";
+  grid-template-columns: 1fr 1fr;
+}
+main > * {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  flex: 1 1 100%;
+}
+.ac {
+  grid-area: ac;
+}
+.remote-wrap {
+  grid-area: remote-wrap;
+}
+.details {
+  grid-area: details;
+}
+
+/* 2. AC */
+
+.box,
+.remote {
+  padding: 1em;
+  background-color: #fff;
+  height: 20vh;
+  width: 70vw;
+  font-size: xx-large;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: inset 0px 2px 2px 5px rgba(0, 0, 0, 0.5),
+    0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 100px 100px;
+}
+
+.display {
+  text-align: center;
+  color: greenyellow;
+  font-family: monospace;
+  font-size: large;
+  background-color: #000;
+  border-radius: 500px;
+}
+
+/* 3. Remote */
+.remote-wrap {
+  display: grid;
+  grid-template-areas: "remote extra";
+  gap: 1em;
+}
+.remote {
+  grid-area: remote;
+  border-radius: 10px;
+}
+.remote > * {
+  display: inline;
+  font-size: xx-large;
+  padding: 0.5em;
+}
+.up,
+.down {
+  border: none;
+  height: 2em;
+  width: 2em;
+  background-image: url(./up-arrow.svg);
+  background-size: contain;
+}
+.down {
+  transform: rotate(180deg);
+}
