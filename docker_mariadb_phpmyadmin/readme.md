@@ -16,6 +16,11 @@ docker-compose up
 docker-compose down
 ```
 
+### Connections
+
+1. Mariadb Server => :3306
+2. PhpMyadmin => localhost:8183
+
 ### References Config
 
 1. [Docker](https://docs.docker.com/)
