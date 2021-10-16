@@ -1,0 +1,2 @@
+for indonesian people, you can learn with this article
+https://akimabs.medium.com/belajar-ci-cd-react-native-dengan-github-actions-deploy-ke-telegram-d4be39076f7e
